@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import RightSidebar from './SideBar';
 
 const MandalaHeader = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -74,32 +75,9 @@ const MandalaHeader = () => {
 
                 {/* Mobile Navigation Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden border-t border-gray-200">
-                        <div className="py-4 space-y-4 font-lato font-semibold text-sm leading-[100%] tracking-normal">
-                            <a href="#" className="block text-[#80500080] hover:text-[#996000] focus:text-[#996000]  transition-colors">
-                                Home
-                            </a>
-                            <a href="#" className="block text-[#80500080] hover:text-[#996000] focus:text-[#996000] transition-colors">
-                                About Mandala
-                            </a>
-                            <a href="#" className="block text-[#80500080] hover:text-[#996000] focus:text-[#996000] transition-colors">
-                                Is This You?
-                            </a>
-                            <a href="#" className="block text-[#80500080] hover:text-[#996000] focus:text-[#996000] transition-colors">
-                                Guidance
-                            </a>
-                            <a href="#" className="block text-[#80500080] hover:text-[#996000] focus:text-[#996000]  transition-colors">
-                                Articles
-                            </a>
-                            <div className="pt-4">
-                                <a href="https://calendly.com/clayboykin" target="_blank" rel="noopener noreferrer">
-                                    <button className="w-full bg-[#664000] hover:bg-[#4d2f00] cursor-pointer text-white px-6 py-2 rounded-md font-medium transition-colors duration-200">
-                                        Book a Session
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <RightSidebar
+                     isOpen={isMobileMenuOpen} 
+        onClose={() => setIsMobileMenuOpen(false)} />
                 )}
             </div>
         </header>
