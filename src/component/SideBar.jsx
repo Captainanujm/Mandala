@@ -3,11 +3,10 @@ import { X } from "lucide-react";
 
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
-    <div
-      className={`fixed top-0 right-0 h-full w-full bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between ${
-        isOpen ? "translate-x-0" : "translate-x-full"
-      }`}
-    >
+   <div
+  className={`fixed top-0 right-0 h-full w-full bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-6 sm:px-10
+    ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+>
       {/* Top Section */}
       <div>
         {/* Close button */}
@@ -21,7 +20,8 @@ const RightSidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Navigation */}
-        <nav className="flex flex-col items-end px-6 space-y-6 font-['Playfair_Display'] font-bold text-[32px] sm:text-[45px] leading-[42px] sm:leading-[54px] tracking-[-0.02em]">
+       <nav className="flex flex-col items-end px-6 sm:px-10 space-y-6 font-['Playfair_Display'] font-bold text-[32px] sm:text-[45px] leading-[42px] sm:leading-[54px] tracking-[-0.02em]">
+
           <a
             href="#"
             className="relative inline-block text-[#CC7A00]"
@@ -57,7 +57,8 @@ const RightSidebar = ({ isOpen, onClose }) => {
       </div>
 
       {/* Middle Section (Contact Info) */}
-      <div className="pt-4 flex flex-col items-center justify-center mt-18 px-4">
+     <div className="pt-4 flex flex-col items-center justify-center mt-18 px-6 sm:px-10">
+
         <div className="flex items-center justify-center space-x-2 text-[#664000] w-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
