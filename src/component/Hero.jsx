@@ -34,7 +34,7 @@ const MandalaHeroSection = () => {
 
 
             {/* Quote */}
-            <div className="mb-8 absolute top-1/3 min-w-full sm:max-w-full">
+            <div className="mb-2 absolute top-1/3 min-w-full sm:max-w-full">
               <p
                 className="italic text-sm sm:text-2xl font-normal leading-tight text-[#CC7A00] align-middle"
                 style={{
