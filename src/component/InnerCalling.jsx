@@ -295,7 +295,7 @@ const InnerCallingSection = () => {
         <div className="text-center mt-12 lg:mt-16 mb-12">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto relative">
             {/* Top Left Quote */}
-            <div className="absolute left-7 -top-4 sm:left-40 sm:-top-8">
+            <div className="absolute left-7 -top-4 sm:left-30 sm:-top-7">
               <svg
                 width="25"
                 height="17"
@@ -309,7 +309,7 @@ const InnerCallingSection = () => {
             </div>
 
             {/* Top Right Quote */}
-            <div className="absolute right-7 -top-4 sm:right-40 sm:-top-8">
+            <div className="absolute right-7 -top-4 sm:right-30 sm:-top-7">
               <svg
                 width="25"
                 height="17"
@@ -324,7 +324,7 @@ const InnerCallingSection = () => {
 
             {/* Quote Text */}
             <p
-              className="text-[#664000] text-[17px] italic font-light px-10 sm:text-[28px] sm:p-0"
+              className="text-[#664000] text-[17px] italic font-light px-7 sm:text-[28px] sm:p-0"
               style={{
                 fontFamily: "'La Belle Aurore', cursive",
                 fontWeight: 400,
