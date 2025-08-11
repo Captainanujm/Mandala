@@ -8,12 +8,12 @@ const InnerCallingSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-4 lg:gap-4 items-center">
           {/* Left Column - Heading */}
-          <div className="text-left relative">
+          <div className=" pl-4 text-left relative">
             {/* SVG Positioned on top-left corner*/}
             <svg
-              className="absolute -top-10 -left-12"
+              className="absolute -top-8 left-0"
               width="65"
-              height="65"
+              height="69"
               viewBox="0 0 65 65"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,12 +30,7 @@ const InnerCallingSection = () => {
 
             {/* Heading Text */}
             <h2
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: 700,
-                fontSize: '64px',
-                lineHeight: '68px',
-              }}
+              className="font-playfair pl-8 font-bold text-[40px] leading-[40px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
             >
               <span
                 style={{
@@ -129,7 +124,7 @@ const InnerCallingSection = () => {
                 You've succeeded outwardly{' '}
                 (career, status, family)
                 —{' '}
-                <strong style={{ color: '#CC7A00' /* Tailwind's text-amber-800 */ }}>
+                <strong style={{ color: '#CC7A00' }}>
                   But feel a quiet emptiness inside.
                 </strong>
               </div>
