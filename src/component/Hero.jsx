@@ -6,16 +6,16 @@ const MandalaHeroSection = () => {
 
   const handleVideoClick = () => {
     setIsVideoPlaying(true);
-    // In a real implementation, you would trigger video playback here
     console.log("Video playback would start here");
   };
 
   return (
     <section className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 py-12 sm:py-16 relative z-10">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center relative">
-            <svg
+            {/* svg 1 */}
+           <svg
               width="502"
               height="41"
               viewBox="0 0 502 41"
@@ -28,16 +28,21 @@ const MandalaHeroSection = () => {
                 style={{fill:'#F4E5CD', fillOpacity:'1',}}
               />
             </svg>
-          {/* Quote */}
-          <div className="mb-8 absolute top-1/3">
-            <p
-              className="italic text-[24px] font-normal leading-[90%] text-[#CC7A00] align-middle"
-              style={{
-                fontFamily: "'La Belle Aurore', cursive",
-                letterSpacing: "0",
-              }}
-            >
-              <svg
+
+            {/* svg 1 end */}
+
+
+            {/* Quote */}
+            <div className="mb-8 absolute top-1/3 max-w-[90%] sm:max-w-full">
+              <p
+                className="italic text-lg sm:text-2xl font-normal leading-tight text-[#CC7A00] align-middle"
+                style={{
+                  fontFamily: "'La Belle Aurore', cursive",
+                  letterSpacing: "0",
+                }}
+              >
+                {/* svg2 */}
+                  <svg
                 width="25"
                 height="16"
                 viewBox="0 0 25 16"
@@ -53,9 +58,12 @@ const MandalaHeroSection = () => {
                   d="M4.14977 0.43546C-3.12967 3.23156 -0.172912 15.4445 7.91 15.9748C10.0151 16.1194 10.5615 15.6212 8.97059 15.0267C7.42793 14.4481 5.48353 11.7163 5.27463 9.86832C5.22642 9.49872 5.51564 9.19337 5.88523 9.19337C8.0064 9.19337 8.89025 9.19343 10.1276 7.49006C13.1647 3.27984 9.13129 -1.47682 4.14977 0.43546Z"
                   fill="#CC7A00"
                 />
-              </svg>
-              For the person seeking meaning beyond success
-              <svg
+              </svg>
+                {/* svg2 end */}
+                For the person seeking meaning beyond success
+                {/* svg 3 */}
+                  <svg
+              // svg 3
                 width="25"
                 height="16"
                 viewBox="0 0 25 16"
@@ -71,22 +79,20 @@ const MandalaHeroSection = () => {
                   d="M19.9909 15.5645C27.2703 12.7684 24.3135 0.555539 16.2306 0.0252438C14.1255 -0.119381 13.5792 0.378775 15.17 0.973349C16.7127 1.55185 18.6571 4.28368 18.866 6.13168C18.9142 6.50128 18.625 6.80663 18.2554 6.80663C16.1342 6.80663 15.2504 6.80657 14.013 8.50994C10.9759 12.7202 15.0093 17.4768 19.9909 15.5645Z"
                   fill="#CC7A00"
                 />
-              </svg>
-            </p>
+              </svg>
+                {/* svg3 end */}
+              </p>
+            </div>
           </div>
-          </div>
-
 
           {/* Main Heading */}
           <div
-            className="mb-8 text-center mt-8"
+            className="mb-8 text-center mt-12 sm:mt-8"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             <h1
-              className="font-bold"
+              className="font-bold text-[42px] sm:text-[72px] leading-[110%] sm:leading-[64px]"
               style={{
-                fontSize: "72px",
-                lineHeight: "64px",
                 letterSpacing: "-0.03em",
                 display: "inline-block",
                 position: "relative",
@@ -108,7 +114,6 @@ const MandalaHeroSection = () => {
               <span
                 style={{
                   color: "#664000",
-                  fontSize: "72px",
                   fontWeight: "700",
                   fontStyle: "normal",
                   textDecoration: "underline",
@@ -118,23 +123,25 @@ const MandalaHeroSection = () => {
                   textDecorationSkipInk: "auto",
                   marginLeft: "4px",
                   position: "relative",
-                  zIndex: 1, // make sure it's above background but below svg if needed
+                  zIndex: 1,
                 }}
               >
                 ,{/* SVG above the comma */}
                 <span
                   style={{
                     position: "absolute",
-                    bottom: "50%", // place above the comma
-                    left: "100%", // center horizontally relative to comma
-                    transform: "translateX(-50%) translateY(20%)", // adjust vertical position (20% down for overlap)
-                    width: "66px",
-                    height: "66px",
+                    bottom: "50%",
+                    left: "100%",
+                    transform: "translateX(-50%) translateY(20%)",
+                    width: "40px",
+                    height: "40px",
                     pointerEvents: "none",
                     zIndex: 2,
                   }}
                 >
-                  <svg
+                  {/* svg 4 */}
+                    <svg
+                  // svg 4
                     width="66"
                     height="66"
                     viewBox="0 0 66 66"
@@ -152,37 +159,25 @@ const MandalaHeroSection = () => {
                       fill="#CC7A00"
                       style={{ fillOpacity: 1 }}
                     />
-                  </svg>
+                  </svg>
+                  {/* svg 4end */}
                 </span>
               </span>
             </h1>
 
             <h2
-              className="font-bold mt-2"
-              style={{
-                fontSize: "72px",
-                lineHeight: "64px",
-                letterSpacing: "-0.03em",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "8px",
-              }}
+              className="font-bold mt-2 flex flex-wrap justify-center gap-2 sm:gap-4 text-[42px] sm:text-[72px] leading-[110%] sm:leading-[64px]"
+              style={{ letterSpacing: "-0.03em" }}
             >
               {/* SVG before Meaning */}
               <span
-                style={{
-                  display: "inline-block",
-                  width: "47px",
-                  height: "60px",
-                  position: "relative",
-                  top: "-36px",
-                  left: "8px", // move right by 6px (adjust as needed)
-                  flexShrink: 0,
-                }}
+                className="inline-block relative top-[-20px] sm:top-[-36px] left-[4px] sm:left-[8px] flex-shrink-0 w-[28px] h-[36px] sm:w-[47px] sm:h-[60px]"
                 aria-hidden="true"
               >
-                <svg
+                {/* svg 5 */}
+                  <svg
+
+                // svg 5
                   width="47"
                   height="60"
                   viewBox="0 0 47 60"
@@ -205,7 +200,8 @@ const MandalaHeroSection = () => {
                     fill="#CC7A00"
                     style={{ fillOpacity: 1 }}
                   />
-                </svg>
+                </svg>
+                {/* svg 5 end */}
               </span>
               <span
                 style={{
@@ -222,7 +218,6 @@ const MandalaHeroSection = () => {
               <span
                 style={{
                   color: "#664000",
-                  fontSize: "72px",
                   fontWeight: "700",
                   fontStyle: "normal",
                   textDecoration: "underline",
@@ -238,7 +233,6 @@ const MandalaHeroSection = () => {
                 className="italic"
                 style={{
                   color: "#66400040",
-                  fontSize: "72px",
                   fontWeight: "700",
                   fontStyle: "italic",
                 }}
@@ -258,21 +252,18 @@ const MandalaHeroSection = () => {
               >
                 Inner Peace
               </span>
-              <span className="text-[#664000]" style={{ fontSize: "48px" }}>
-                .
-              </span>
+              <span className="text-[#664000] text-[32px] sm:text-[48px]">.</span>
             </h2>
           </div>
 
           {/* Subheading */}
           <div className="mb-12">
             <p
-              className="max-w-2xl mx-auto"
+              className="max-w-2xl mx-auto text-[18px] sm:text-[22px]"
               style={{
                 fontFamily: "Lato, sans-serif",
                 fontWeight: 600,
-                fontStyle: "normal", // 'SemiBold' isn't a font-style, use fontWeight 600 as you did
-                fontSize: "22px",
+                fontStyle: "normal",
                 lineHeight: "100%",
                 letterSpacing: "0%",
                 textAlign: "center",
@@ -291,41 +282,41 @@ const MandalaHeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-[#CC7A00] hover:bg-[#664000] cursor-pointer text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 transform shadow-lg hover:shadow-xl">
+              <button className="bg-[#CC7A00] hover:bg-[#664000] cursor-pointer text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium transition-all duration-300 transform shadow-lg hover:shadow-xl">
                 Try a Free 20-Minute Session
               </button>
             </a>
 
             <p
-              className="mt-3 text-sm"
+              className="mt-3 text-sm sm:text-base"
               style={{
                 fontFamily: "Lato, sans-serif",
                 fontWeight: 500,
                 fontStyle: "normal",
-                fontSize: "16px",
                 lineHeight: "24px",
-                letterSpacing: "0%",
                 textAlign: "center",
                 color: "#66400080",
               }}
             >
               No pressure. Just a conversation. No credit card,
-              <br />
+              <br className="hidden sm:block" />
               no commitments.
             </p>
           </div>
 
           {/* Video Section */}
-          <div className="w-full flex justify-center pt-16">
+          <div className="w-full flex justify-center pt-12 sm:pt-16">
             <div
-              className="relative overflow-hidden group cursor-pointer"
+              className="relative overflow-hidden group cursor-pointer w-full max-w-[980px]"
               onClick={handleVideoClick}
             >
               {/* Thumbnail Image */}
-              <div className="relative w-[980px] h-[548px] overflow-hidden ">
+              <div className="relative w-full aspect-video overflow-hidden">
                 {/* SVG in top-left corner */}
-                <div className="absolute -top-6 left-4 z-10 p-4">
+                <div className="absolute -top-4 sm:-top-6 left-2 sm:left-4 z-10 p-2 sm:p-4">
+                  {/* svg 6 */}
                   <svg
+                  // svg 6
                     width="57"
                     height="61"
                     viewBox="0 0 57 61"
@@ -441,6 +432,7 @@ const MandalaHeroSection = () => {
                       }}
                     />
                   </svg>
+                  {/* svg 6 end */}
                 </div>
 
                 <img
@@ -449,8 +441,10 @@ const MandalaHeroSection = () => {
                   className="w-full h-full object-cover"
                 />
 
-                <div className="absolute bottom-0 right-0 z-10 p-4">
-                  <svg
+                <div className="absolute bottom-0 right-0 z-10 p-2 sm:p-4">
+                  {/* svg 7 */}
+                      <svg
+                  // svg 7
                     width="57"
                     height="61"
                     viewBox="0 0 57 61"
@@ -566,16 +560,17 @@ const MandalaHeroSection = () => {
                       }}
                     />
                   </svg>
+                  {/* svg 7 end */}
                 </div>
 
                 {/* Centered Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div
-                    className="rounded-full p-6 transition-all duration-300 transform group-hover:scale-110 shadow-lg"
+                    className="rounded-full p-4 sm:p-6 transition-all duration-300 transform group-hover:scale-110 shadow-lg"
                     style={{ background: "#d2b177fa" }}
                   >
                     <Play
-                      className="w-8 h-8 text-white ml-1"
+                      className="w-6 h-6 sm:w-8 sm:h-8 text-white ml-1"
                       fill="currentColor"
                     />
                   </div>
