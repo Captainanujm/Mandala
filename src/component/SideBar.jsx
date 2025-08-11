@@ -4,36 +4,36 @@ import { X } from "lucide-react";
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
     <div
-      className={`fixed top-0 min-h-screen w-full sm:w-[360px] bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-4 sm:px-6
+      className={`fixed top-0 right-0 min-h-screen w-full max-w-[100vw] sm:w-[360px] bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-3 sm:px-6
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
     >
       {/* Top Section */}
       <div>
         {/* Close button */}
         <div
-          className="absolute top-6 right-6 cursor-pointer"
+          className="absolute top-4 sm:top-6 right-4 sm:right-6 cursor-pointer z-10"
           onClick={onClose}
         >
-          <X className="h-6 w-6 text-black" />
+          <X className="h-5 w-5 sm:h-6 sm:w-6 text-black" />
         </div>
 
         {/* Logo */}
-        <div className="px-2 pt-8 sm:px-6">
+        <div className="px-2 pt-6 sm:pt-8 sm:px-6">
           <img
             src="/logo.png"
             alt="Mandala Logo"
-            className="w-28 sm:w-32 mb-10"
+            className="w-24 sm:w-32 mb-6 sm:mb-10"
           />
         </div>
 
         {/* Navigation */}
         <nav
-          className="flex w-full flex-col items-end px-2 sm:px-6 sm:pr-24 space-y-5 sm:space-y-6
-          font-['Playfair_Display'] font-bold text-[26px] sm:text-[45px]
-          leading-[36px] sm:leading-[54px] tracking-[-0.02em]"
+          className="flex w-full flex-col items-end px-2 sm:px-6 sm:pr-24 space-y-3 sm:space-y-6
+          font-['Playfair_Display'] font-bold text-[20px] sm:text-[45px]
+          leading-[28px] sm:leading-[54px] tracking-[-0.02em]"
         >
-          <a href="#" className="relative inline-block text-[#CC7A00]">
-            {/* Decorative strokes */}
+          <a href="#" className="relative inline-block text-[#CC7A00] w-full text-right">
+            {/* Decorative strokes - hidden on mobile */}
             <svg
               width="47"
               height="60"
@@ -51,31 +51,31 @@ const RightSidebar = ({ isOpen, onClose }) => {
                 fill="#CC7A00"
               />
             </svg>
-            <span className="border-b-[4px] border-dotted border-[#CC7A00] pb-1 m-1 sm:pr-10">
+            <span className="border-b-[3px] sm:border-b-[4px] border-dotted border-[#CC7A00] pb-1 inline-block sm:pr-10">
               Home
             </span>
           </a>
-          <a href="#" className="text-[#664000] sm:pr-10">
+          <a href="#" className="text-[#664000] w-full text-right sm:pr-10">
             About Mandala
           </a>
-          <a href="#" className="text-[#664000] sm:pr-10">
+          <a href="#" className="text-[#664000] w-full text-right sm:pr-10">
             Is this You?
           </a>
-          <a href="#" className="text-[#664000] sm:pr-7">
+          <a href="#" className="text-[#664000] w-full text-right sm:pr-7">
             Guidance
           </a>
-          <a href="#" className="text-[#664000] sm:pr-7">
+          <a href="#" className="text-[#664000] w-full text-right sm:pr-7">
             Article
           </a>
         </nav>
       </div>
 
       {/* Middle Section (Contact Info) */}
-      <div className="pt-4 flex flex-col items-center justify-center mt-10 px-4 sm:px-10">
-        <div className="flex items-center justify-center space-x-2 text-[#664000] w-full">
+      <div className="pt-4 flex flex-col items-center justify-center mt-6 sm:mt-10 px-2 sm:px-10">
+        <div className="flex items-center justify-center space-x-2 text-[#664000] w-full max-w-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 flex-shrink-0"
+            className="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0"
             viewBox="0 0 24 24"
             fill="#664000"
           >
@@ -85,14 +85,14 @@ const RightSidebar = ({ isOpen, onClose }) => {
               d="M17.5 8.5h-11l5.5 4 5.5-4zm-11 1v6h11v-6l-5.5 4-5.5-4z"
             />
           </svg>
-          <p className="font-[Lato] text-[15px] sm:text-[19px] leading-[100%] text-right text-[#664000] break-words">
+          <p className="font-[Lato] text-[13px] sm:text-[19px] leading-[100%] text-center sm:text-right text-[#664000] break-all overflow-hidden">
             clayboykin@gmail.com
           </p>
         </div>
-        <div className="flex items-center justify-center space-x-2 mt-2 text-[#664000] w-full">
+        <div className="flex items-center justify-center space-x-2 mt-2 text-[#664000] w-full max-w-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 flex-shrink-0"
+            className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -104,7 +104,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
               d="M2 5.5C2 4.67 2.67 4 3.5 4h3a1 1 0 01.93.63l1.26 3.02a1 1 0 01-.27 1.11l-1.7 1.7a15.05 15.05 0 006.36 6.36l1.7-1.7a1 1 0 011.11-.27l3.02 1.26a1 1 0 01.63.93v3c0 .83-.67 1.5-1.5 1.5h-1C9.27 21 3 14.73 3 7V5.5z"
             />
           </svg>
-          <span className="font-[Lato] text-[15px] sm:text-[19px] leading-[100%] text-[#664000] break-words">
+          <span className="font-[Lato] text-[13px] sm:text-[19px] leading-[100%] text-[#664000] whitespace-nowrap">
             512.971.2895
           </span>
         </div>
@@ -189,7 +189,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Footer */}
-        <p className="font-[Lato] font-semibold text-[14px] sm:text-[19px] mb-6 text-center text-[#664000] px-4 break-words">
+        <p className="font-[Lato] font-semibold text-[12px] sm:text-[19px] mb-4 sm:mb-6 text-center text-[#664000] px-2 sm:px-4 break-words leading-tight">
           © 2025 Clay Boykin. All Rights Reserved.
         </p>
       </div>
