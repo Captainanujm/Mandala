@@ -30,7 +30,7 @@ const InnerCallingSection = () => {
 
             {/* Heading Text */}
             <h2
-              className="font-playfair font-bold pl-10 text-[35px] leading-[35px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
+              className="font-playfair font-bold pl-10 pr-10 text-[35px] leading-[35px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
             >
               <span
                 style={{
@@ -90,10 +90,10 @@ const InnerCallingSection = () => {
 
 
           {/* Right Column - Checkpoints */}
-          <div className="space-y-4 lg:space-y-4 ">
+          <div className="space-y-4 lg:space-y-4 p-7 pr-7 ">
             {/* Checkpoint 1 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1">
+              <div className="flex-shrink-0 mt-6">
                 <svg
                   width="34"
                   height="30"
@@ -115,11 +115,12 @@ const InnerCallingSection = () => {
                   fontFamily: 'Lato',
                   fontWeight: 400,
                   fontStyle: 'normal',
-                  fontSize: '22px',
+                  // fontSize: '22px',
                   lineHeight: '100%',
                   letterSpacing: '0%',
                   color: '#664000', // Tailwind's text-gray-700
                 }}
+                className="text-[24px] sm:text-[28px]"
               >
                 You've succeeded outwardly{' '}
                 (career, status, family)
@@ -133,7 +134,7 @@ const InnerCallingSection = () => {
 
             {/* Checkpoint 2 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1">
+              <div className="flex-shrink-0 mt-5">
                 <svg
                   width="34"
                   height="30"
@@ -154,11 +155,12 @@ const InnerCallingSection = () => {
                   fontFamily: 'Lato',
                   fontWeight: 400,
                   fontStyle: 'normal',
-                  fontSize: '24px',
+                  // fontSize: '24px',
                   lineHeight: '100%',
                   letterSpacing: '0%',
                   color: '#664000',
                 }}
+                className="text-[24px] sm:text-[28px]"
               >
                 You sense there's more purpose beyond early mornings & evening commutes.
               </div>
@@ -166,7 +168,7 @@ const InnerCallingSection = () => {
 
             {/* Checkpoint 3 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1">
+              <div className="flex-shrink-0 mt-5">
                 <svg
                   width="34"
                   height="30"
@@ -187,11 +189,12 @@ const InnerCallingSection = () => {
                   fontFamily: 'Lato',
                   fontWeight: 400,
                   fontStyle: 'normal',
-                  fontSize: '24px',
+                  // fontSize: '24px',
                   lineHeight: '100%',
                   letterSpacing: '0%',
                   color: '#664000',
                 }}
+                className="text-[24px] sm:text-[28px]"
               >
                 You've <strong style={{ color: '#CC7A00' }}>Lost touch</strong> with{' '}
                 <strong style={{ color: '#CC7A00' }}>what genuinely inspires your heart.</strong>
@@ -200,7 +203,7 @@ const InnerCallingSection = () => {
 
             {/* Checkpoint 4 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1">
+              <div className="flex-shrink-0 mt-4">
                 <svg
                   width="34"
                   height="30"
@@ -221,11 +224,12 @@ const InnerCallingSection = () => {
                   fontFamily: 'Lato',
                   fontWeight: 400,
                   fontStyle: 'normal',
-                  fontSize: '24px',
+                  // fontSize: '24px',
                   lineHeight: '100%',
                   letterSpacing: '0%',
                   color: '#664000',
                 }}
+                className="text-[24px] sm:text-[28px]"
               >
                 You want <strong style={{ color: '#CC7A00' }}>Clarity, Stillness,</strong> &{' '}
                 <strong style={{ color: '#CC7A00' }}>Depth</strong> — Not quick fixes/quick wins.
@@ -234,7 +238,7 @@ const InnerCallingSection = () => {
 
             {/* Checkpoint 5 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 mt-1">
+              <div className="flex-shrink-0 mt-4">
                 <svg
                   width="34"
                   height="30"
@@ -255,11 +259,12 @@ const InnerCallingSection = () => {
                   fontFamily: 'Lato',
                   fontWeight: 400,
                   fontStyle: 'normal',
-                  fontSize: '24px',
+                  // fontSize: '24px',
                   lineHeight: '100%',
                   letterSpacing: '0%',
                   color: '#664000',
                 }}
+                className="text-[24px] sm:text-[28px]"
               >
                 You're <strong className="text-[#CC7A00]">Ready for reflection,</strong> even if it means sitting in discomfort.
               </div>
@@ -267,14 +272,15 @@ const InnerCallingSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-start mt-3 lg:mt-4 ml-74">
+        <div className="flex justify-start mt-3 lg:mt-4 ml-60 sm:ml-74 ">
           <svg
             width="87"
             height="74"
             viewBox="0 0 87 74"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-[#664000]"
+            className="text-[#664000] scale-x-[-1] sm:scale-x-100"
+            
           >
             <path
               fillRule="evenodd"
@@ -289,7 +295,7 @@ const InnerCallingSection = () => {
         <div className="text-center mt-12 lg:mt-16 mb-12">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto relative">
             {/* Top Left Quote */}
-            <div className="absolute left-38 -top-4">
+            <div className="absolute left-7 -top-4 sm:left-40 sm:-top-8">
               <svg
                 width="25"
                 height="17"
@@ -303,7 +309,7 @@ const InnerCallingSection = () => {
             </div>
 
             {/* Top Right Quote */}
-            <div className="absolute right-38 -top-4">
+            <div className="absolute right-7 -top-4 sm:right-40 sm:-top-8">
               <svg
                 width="25"
                 height="17"
@@ -318,12 +324,12 @@ const InnerCallingSection = () => {
 
             {/* Quote Text */}
             <p
-              className="text-[#664000] italic font-light px-4"
+              className="text-[#664000] text-[17px] italic font-light px-10 sm:text-[28px] sm:p-0"
               style={{
                 fontFamily: "'La Belle Aurore', cursive",
                 fontWeight: 400,
                 fontStyle: 'normal',
-                fontSize: '28px',
+                // fontSize: '28px',
                 lineHeight: '32px',
                 letterSpacing: '0%',
                 maxWidth: '48rem',
