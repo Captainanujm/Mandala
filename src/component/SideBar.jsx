@@ -100,7 +100,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
       {/* Bottom Section */}
       <div>
         {/* Social Icons */}
-        <div className="flex justify-center space-x-4 m-6">
+        <div className="flex justify-center space-x-4 mt-4 mb-4">
           {/* Facebook */}
           <a
             href="https://facebook.com"
