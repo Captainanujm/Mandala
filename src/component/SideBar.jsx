@@ -4,13 +4,13 @@ import { X } from "lucide-react";
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
    <div
-  className={`fixed top-0 right-0 min-h-screen w-full max-w-xs bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between
+  className={`fixed top-0 right-0 min-h-screen w-full max-w-s bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between
     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
 >
       {/* Top Section */}
       <div>
         {/* Close button */}
-        <div className="absolute top-6 right-6 cursor-pointer" onClick={onClose}>
+        <div className="absolute top-12 right-5 cursor-pointer" onClick={onClose}>
           <X className="h-6 w-6 text-black" />
         </div>
 
