@@ -34,9 +34,9 @@ const MandalaHeroSection = () => {
 
 
             {/* Quote */}
-            <div className="mb-8 absolute top-1/3 max-w-[90%] sm:max-w-full">
+            <div className="mb-8 absolute top-1/3 min-w-full sm:max-w-full">
               <p
-                className="italic text-lg sm:text-2xl font-normal leading-tight text-[#CC7A00] align-middle"
+                className="italic text-sm sm:text-2xl font-normal leading-tight text-[#CC7A00] align-middle"
                 style={{
                   fontFamily: "'La Belle Aurore', cursive",
                   letterSpacing: "0",
