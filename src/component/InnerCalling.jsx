@@ -30,7 +30,7 @@ const InnerCallingSection = () => {
 
             {/* Heading Text */}
             <h2
-              className="font-playfair font-bold pl-10 pr-10 text-[35px] leading-[35px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
+              className="font-playfair font-bold pl-10 pr-10 text-[40px] leading-[45px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
             >
               <span
                 style={{
