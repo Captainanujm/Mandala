@@ -88,7 +88,7 @@ const MandalaHeroSection = () => {
 
           {/* Main Heading */}
           <div
-            className="mb-8 text-center mt-12 sm:mt-8"
+            className="mb-8 text-center mt-12 sm:mt-8 p-6"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             <h1
@@ -131,7 +131,7 @@ const MandalaHeroSection = () => {
                 <span
                    className="
                     absolute 
-                       top-[70px] left-[-55px] 
+                       top-[70px] left-[50px] 
                     -translate-x-1/2 translate-y-5 
                  w-12 h-12
                  pointer-events-none 
@@ -170,7 +170,7 @@ const MandalaHeroSection = () => {
             >
               {/* SVG before Meaning */}
               <span
-                className="inline-block relative top-[-80px] left-[-70px] lg:top-[-18px] lg:left-[20px] flex-shrink-0 pr-14 sm:pr-0 w-[28px] h-[26px] sm:w-[47px] sm:h-[60px]"
+                className="inline-block relative top-[-130px] left-[-1px] lg:top-[-18px] lg:left-[20px] flex-shrink-0 pr-14 sm:pr-0 w-[28px] h-[26px] sm:w-[47px] sm:h-[60px]"
                 aria-hidden="true"
               >
                 {/* svg 5 */}
