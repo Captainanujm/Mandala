@@ -3,17 +3,17 @@ import { Check } from 'lucide-react';
 
 const InnerCallingSection = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden py-10 px-4">
+    <section className="min-h-screen relative overflow-hidden py-10">
 
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-4 lg:gap-4 items-center">
           {/* Left Column - Heading */}
-          <div className=" pl-4 text-left relative">
+          <div className=" text-left relative">
             {/* SVG Positioned on top-left corner*/}
             <svg
-              className="absolute -top-8 left-0"
+              className="absolute -top-9"
               width="65"
-              height="69"
+              height="60"
               viewBox="0 0 65 65"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const InnerCallingSection = () => {
 
             {/* Heading Text */}
             <h2
-              className="font-playfair pl-8 font-bold text-[40px] leading-[40px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
+              className="font-playfair font-bold pl-10 text-[35px] leading-[35px] sm:text-[48px] sm:leading-[54px] lg:text-[64px] lg:leading-[68px]"
             >
               <span
                 style={{
@@ -90,7 +90,7 @@ const InnerCallingSection = () => {
 
 
           {/* Right Column - Checkpoints */}
-          <div className="space-y-2 lg:space-y-4">
+          <div className="space-y-4 lg:space-y-4 ">
             {/* Checkpoint 1 */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 mt-1">
