@@ -99,7 +99,7 @@ const MandalaHeroSection = () => {
                 position: "relative",
               }}
             >
-              <span className="display-block sm:display-inline" style={{ color: "#66400040"}}>Rediscover</span>{" "}
+              <span className="lg:display-inline sm:display-block " style={{ color: "#66400040"}}>Rediscover</span>{" "}
               <span
                 style={{
                   color: "#664000",
@@ -131,12 +131,12 @@ const MandalaHeroSection = () => {
                 <span
                    className="
                     absolute 
-                       top-[70px] left-[50px] 
+                       top-[70px] left-[-55px] 
                     -translate-x-1/2 translate-y-5 
                  w-12 h-12
                  pointer-events-none 
                    z-20
-                  sm:top-[10px] sm:left-[2px] sm:translate-x-0 sm:translate-y-0"
+                  sm:top-[7px] sm:left-[1px] sm:translate-x-0 sm:translate-y-0"
                 >
                   {/* svg 4 */}
                     <svg
@@ -170,7 +170,7 @@ const MandalaHeroSection = () => {
             >
               {/* SVG before Meaning */}
               <span
-                className="inline-block relative top-[-130px] sm:top-[-36px] left-[12px] sm:left-[8px] flex-shrink-0 pr-14 sm:pr-0 w-[28px] h-[26px] sm:w-[47px] sm:h-[60px]"
+                className="inline-block relative top-[-80px] left-[-70px] lg:top-[-18px] lg:left-[20px] flex-shrink-0 pr-14 sm:pr-0 w-[28px] h-[26px] sm:w-[47px] sm:h-[60px]"
                 aria-hidden="true"
               >
                 {/* svg 5 */}
