@@ -129,16 +129,24 @@ const MandalaHeroSection = () => {
               >
                 ,{/* SVG above the comma */}
                 <span
-                  style={{
-                    position: "absolute",
-                    bottom: "50%",
-                    left: "100%",
-                    transform: "translateX(-50%) translateY(20%)",
-                    width: "40px",
-                    height: "40px",
-                    pointerEvents: "none",
-                    zIndex: 2,
-                  }}
+                  // style={{
+                  //   position: "absolute",
+                  //   bottom: "50%",
+                  //   left: "100%",
+                  //   transform: "translateX(-50%) translateY(20%)",
+                  //   width: "40px",
+                  //   height: "40px",
+                  //   pointerEvents: "none",
+                  //   zIndex: 2,
+                  // }}
+                   className="
+                    absolute 
+                       top-[66px] left-[50px] 
+                    -translate-x-1/2 translate-y-5 
+                 w-12 h-12
+                 pointer-events-none 
+                   z-20
+                  sm:top-[10px] sm:left-[2px] sm:translate-x-0 sm:translate-y-0"
                 >
                   {/* svg 4 */}
                     <svg
@@ -172,7 +180,7 @@ const MandalaHeroSection = () => {
             >
               {/* SVG before Meaning */}
               <span
-                className="inline-block relative top-[-20px] sm:top-[-36px] left-[4px] sm:left-[8px] flex-shrink-0 w-[28px] h-[36px] sm:w-[47px] sm:h-[60px]"
+                className="inline-block relative top-[-130px] sm:top-[-36px] left-[1px] sm:left-[8px] flex-shrink-0 pr-14 sm:pr-0 w-[28px] h-[26px] sm:w-[47px] sm:h-[60px]"
                 aria-hidden="true"
               >
                 {/* svg 5 */}
