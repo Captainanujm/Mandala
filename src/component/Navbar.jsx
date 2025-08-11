@@ -65,7 +65,7 @@ const MandalaHeader = () => {
                             className="text-gray-600 hover:text-gray-900 transition-colors"
                         >
                             {isMobileMenuOpen ? (
-                                <X className="h-6 w-6" />
+                               <></>
                             ) : (
                                 <Menu className="h-6 w-6" />
                             )}
