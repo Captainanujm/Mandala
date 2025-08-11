@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
    <div
-  className={`fixed top-0 min-h-screen w-full sm:w-[360px] bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-6
+  className={`fixed top-0 min-h-screen sm:min-w-screen bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between
     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
 >
       {/* Top Section */}
@@ -20,7 +20,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Navigation */}
-       <nav className="flex w-[329px] flex-col items-end px-6 sm:px-10 space-y-6 font-['Playfair_Display'] font-bold text-[32px] sm:text-[45px] leading-[42px] sm:leading-[54px] tracking-[-0.02em]">
+       <nav className="flex w-[329px] flex-col items-end px-6 space-y-6 font-['Playfair_Display'] font-bold text-[32px] sm:text-[45px] leading-[42px] sm:leading-[54px] tracking-[-0.02em]">
 
           <a
             href="#"
