@@ -15,7 +15,9 @@ const MandalaHeroSection = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center relative">
             {/* svg 1 */}
-           <svg
+         
+            <svg
+            className="w-full max-w-[502px]"
               width="502"
               height="41"
               viewBox="0 0 502 41"
@@ -28,7 +30,6 @@ const MandalaHeroSection = () => {
                 style={{fill:'#F4E5CD', fillOpacity:'1',}}
               />
             </svg>
-
             {/* svg 1 end */}
 
 
