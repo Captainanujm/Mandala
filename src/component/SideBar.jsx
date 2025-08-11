@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
    <div
-  className={`fixed top-0 h-fit w-fit bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-6 sm:px-12
+  className={`fixed top-0 min-h-screen w-full bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between px-6 sm:px-12
     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
 >
       {/* Top Section */}
