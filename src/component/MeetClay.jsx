@@ -5,7 +5,7 @@ const MeetClayBoykin = () => {
     <div className="min-h-screen py-12 px-4 sm:py-16">
       <div className="max-w-7xl mx-auto">
         {/* === Header Section === */}
-        <div className="text-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             {/* Replaced the complex SVG text with a semantic and responsive h1 tag.
               The original SVG was not scalable. This approach is better for accessibility, SEO, and responsiveness.
