@@ -65,7 +65,7 @@ const MeetClayBoykin = () => {
             The text now uses a base size and scales up on larger screens (lg:).
             The color opacity is handled by Tailwind's syntax (e.g., /35 for 35%).
           */}
-          <div className="my-auto space-y-6 ml-5 sm: m-0 font-lato text-lg font-bold italic leading-relaxed text-[#664000] lg:col-span-2 lg:text-xl">
+          <div className="my-auto space-y-6 m-4 font-lato text-lg font-bold italic leading-relaxed text-[#664000] lg:col-span-2 lg:text-xl">
             <p>
               <span className="font-normal not-italic text-[#664000]/35">
                 How's This:{" "}
@@ -143,7 +143,7 @@ const MeetClayBoykin = () => {
         </div>
 
         {/* === Quote Section === */}
-        <div className="my-16 text-center lg:my-24">
+        <div className="my-16 text-center lg:my-24 m-4">
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
             {/* Decorative Quote SVGs */}
             <div className="absolute -top-4 left-0 sm:left-4">
