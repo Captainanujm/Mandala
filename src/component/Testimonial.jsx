@@ -219,7 +219,12 @@ const TestimonialsSection = () => {
 
                 {/* Testimonials Row */}
                 <div className="relative">
-                    <div className="flex scroll-animation">
+                    <div  className="
+                            flex
+                            scroll-animation
+                           
+                        ">
+                        
                         {duplicatedTestimonials.map((testimonial, index) => (
                             <TestimonialCard
                                 key={index}
