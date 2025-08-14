@@ -3,7 +3,7 @@ import React from 'react';
 const MandalaMethod = () => {
     return (
         <div className="min-h-screen py-8 px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl sm:mx-auto mx-0">
                 {/* Header */}
                 <div className="text-center ">
                     <div className="flex items-center justify-center gap-2 mb-4">
@@ -68,7 +68,7 @@ const MandalaMethod = () => {
 
 
                 {/* Quote Section */}
-                <div className="text-center my-16 lg:my-24">
+                <div className="text-center my-16 lg:my-24 mr-2">
                     <div className="flex flex-col items-center text-center max-w-3xl mx-auto relative px-8 sm:px-0">
                         {/* Top Left Quote */}
                         <div className="absolute left-0 top-0 sm:left-[-2.5rem] sm:-top-2">
