@@ -20,10 +20,10 @@ const MandalaWithinBook = () => {
                     className="text-[24px] leading-[90%] text-amber-600 italic font-normal mb-6 text-center align-middle"
                     style={{ fontFamily: "'La Belle Aurore', cursive", letterSpacing: "0" }}
                 >
-                    Upcoming
+                    <p className='relative z-10'>Upcoming</p>
                 </div>
 
-
+             
 
                 {/* Main Title with decorative elements */}
                 <div className="mb-6 relative" style={{ position: 'relative' }}>
