@@ -2,60 +2,45 @@ import React from 'react';
 
 const MandalaWithinBook = () => {
     return (
-        <div className="py-16 px-4">
+        <div className="py-8 sm:py-16 px-4 sm:px-6">
             <div className="max-w-4xl mx-auto text-center items-center justify-center">
                 {/* Book Icon */}
                 <div className="flex justify-center items-center mb-2">
-                    <div className="text-[#CC7A00] text-4xl">
-                        <svg width="52" height="31" viewBox="0 0 52 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="text-[#CC7A00] text-2xl sm:text-4xl">
+                        <svg className="w-8 h-5 sm:w-[52px] sm:h-[31px]" viewBox="0 0 52 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M50.9544 14.6512C49.2979 9.99016 48.4749 11.3465 49.3854 13.9006C49.8944 15.3476 49.9592 15.7061 49.6939 15.5877C45.3094 13.5617 36.0989 15.9405 30.339 20.6306L27.59 22.8676C27.5752 20.7573 27.5761 19.5459 27.5069 18.8739C27.4541 18.2863 26.5255 18.0705 26.3876 18.7108C26.2222 19.4749 26.171 20.8508 26.0563 23.0379L25.4488 22.275C22.4321 18.4617 13.1122 16.9498 4.13623 18.8396C2.63658 19.1579 2.6158 19.5536 4.32487 14.4423C6.6321 7.4826 7.37458 4.07517 7.82156 2.72006C8.02095 2.1039 14.8389 2.33591 17.3715 3.03258C19.7396 3.67886 24.9256 6.35264 25.6504 7.26787C25.8851 7.57259 26.0301 8.79164 26.2029 11.8711C26.4627 16.4798 26.5416 16.1706 26.9286 16.358C27.6226 16.6659 27.4792 12.6272 27.4737 7.55141L30.305 5.73642C37.0045 1.45063 42.6056 2.1828 43.6152 2.04773L44.8425 4.13807C47.5667 8.75064 47.9167 10.44 48.3648 9.46087C48.5303 9.09358 45.198 1.33697 44.6421 0.78566C43.5894 -0.251193 34.4002 -1.06696 27.7854 4.78978C26.0547 6.32826 26.2455 6.27561 25.4056 5.56321C19.9868 0.955627 7.42605 -1.29006 6.53335 2.19304C5.98349 4.31558 2.53312 12.7611 1.15305 18.37C0.805849 19.8139 0.765411 20.1877 0.970521 20.658C1.21292 21.2137 1.35659 21.263 2.24017 21.1422C2.61838 21.0994 2.67319 21.2485 2.7404 22.7559C2.82407 24.3477 3.19041 25.3276 3.6201 25.0995C3.92045 24.9482 3.81757 25.3187 3.46137 25.7387C2.61525 26.7387 3.37977 28.8883 4.57143 28.8672C5.09435 28.8529 5.23472 28.9647 5.3949 29.4952C5.66259 30.3656 6.054 30.4697 6.96051 29.9115C7.90977 29.3346 9.6088 28.4002 12.3922 27.8986C15.1755 27.397 23.786 28.4957 24.6193 28.9362C25.1269 29.2135 25.3956 29.2693 25.5084 29.1081C25.5983 28.9875 26.3152 28.858 27.1308 28.8381C29.8715 28.752 34.2512 28.4802 36.2267 28.2496C39.169 27.9025 44.6385 28.3562 46.4169 29.0969C48.4002 29.911 49.0634 29.2147 47.7869 27.6648C47.3351 27.119 47.3175 27.0554 47.6869 27.1792C50.5835 28.1038 51.1787 27.1116 49.6114 23.9382C48.9127 22.523 48.9094 22.5855 50.0133 22.6434C51.3256 22.7121 51.2894 22.2089 49.8703 19.7952C48.585 17.6183 48.586 17.5975 50.2229 18.2472C52.1877 19.0185 52.3015 18.4397 50.9544 14.6512Z" fill="#CC7A00" />
                         </svg>
                     </div>
                 </div>
 
-
                 {/* Upcoming label */}
                 <div
-                    className="text-[24px] leading-[90%] text-amber-600 italic font-normal mb-6 text-center align-middle"
+                    className="text-lg sm:text-2xl leading-[90%] text-amber-600 italic font-normal mb-4 sm:mb-6 text-center align-middle"
                     style={{ fontFamily: "'La Belle Aurore', cursive", letterSpacing: "0" }}
                 >
                     Upcoming
                 </div>
 
-
-
                 {/* Main Title with decorative elements */}
-                <div className="mb-6 relative" style={{ position: 'relative' }}>
+                <div className="mb-4 sm:mb-6 relative" style={{ position: 'relative' }}>
+                    {/* Top-left decorative SVG */}
                     <svg
-                        width="58"
-                        height="58"
+                        className="w-8 h-8 sm:w-[58px] sm:h-[58px] absolute -top-6 sm:-top-6 left-8 sm:left-28 z-10 hidden sm:block"
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        style={{
-                            position: 'absolute',
-                            top: -24,
-                            left: 114,
-                            zIndex: 10,
-                        }}
                     >
                         <path d="M45.3679 29.6092C46.5913 29.3231 45.8564 26.5332 42.274 17.7102C38.4757 8.3731 37.2981 6.45162 36.0352 7.27478C34.3125 8.42816 43.3775 30.0208 45.3679 29.6092Z" fill="#CC7A00" />
                         <path d="M16.22 44.9196C17.3346 48.5102 18.0935 48.7808 26.7027 48.6764C35.5949 48.5778 37.2157 48.2433 37.3353 46.5754C37.5396 43.5501 35.1765 42.8215 24.1717 42.3949C16.0524 42.0848 15.3974 42.2695 16.22 44.9196Z" fill="#CC7A00" />
                         <path d="M12.0333 20.7838C12.8006 23.3762 13.6055 24.1573 17.6108 26.2507C29.5157 32.4152 37.5304 37.7629 35.9358 32.7468C35.2989 30.695 33.2039 29.3208 19.5183 21.6471C11.9328 17.4408 11.0296 17.3088 12.0333 20.7838Z" fill="#CC7A00" />
                     </svg>
 
+                    {/* Top-right decorative SVG */}
                     <svg
-                        width="32"
-                        height="32"
+                        className="w-6 h-6 sm:w-[32px] sm:h-[32px] absolute -top-2 sm:top-0 right-8 sm:right-32 z-10 hidden sm:block"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        style={{
-                            position: 'absolute',
-                            top: 0,
-                            right: 134,
-                            zIndex: 10,
-                        }}
                     >
                         <path d="M14.3677 24.9856C13.7969 24.8926 13.3411 25.2993 13.0464 26.1589C12.6336 27.3347 12.7565 27.6443 13.4861 27.2958C14.1419 26.9849 14.8735 25.0652 14.3677 24.9856Z" fill="#CC7A00" />
                         <path d="M13.5265 23.4486C13.4042 23.2085 12.4184 23.3967 12.152 23.7186C11.7019 24.2503 9.76844 28.4224 9.58465 28.6324C9.1343 29.141 10.2328 29.1512 10.7898 28.6464C11.2961 28.1791 13.6583 23.7071 13.5265 23.4486Z" fill="#CC7A00" />
@@ -73,20 +58,19 @@ const MandalaWithinBook = () => {
                             fontFamily: "'Playfair Display', serif",
                             fontWeight: 700,
                             fontStyle: 'normal',
-                            fontSize: '64px',
-                            lineHeight: '64px',
+                            fontSize: 'clamp(32px, 8vw, 64px)',
+                            lineHeight: 'clamp(32px, 8vw, 64px)',
                             letterSpacing: '-0.02em',
                             textAlign: 'center',
-                            color: '#664000', // corresponds to text-amber-800
-                            marginBottom: '0.5rem', // mb-2
-                            position: 'relative', // to keep stacking order above SVG if needed
+                            color: '#664000',
+                            marginBottom: '0.5rem',
+                            position: 'relative',
                             zIndex: 20,
                         }}
                     >
                         The Mandala Within
                     </h1>
                 </div>
-
 
                 {/* Subtitle */}
                 <p
@@ -95,38 +79,38 @@ const MandalaWithinBook = () => {
                         fontFamily: 'Lato, sans-serif',
                         fontWeight: 600,
                         fontStyle: 'normal',
-                        fontSize: '22px',
-                        lineHeight: '100%',
+                        fontSize: 'clamp(16px, 4vw, 22px)',
+                        lineHeight: '120%',
                         letterSpacing: '0%',
                         textAlign: 'center',
-                        maxWidth: '60rem', // increased width (960px)
+                        maxWidth: 'min(90vw, 60rem)',
                         marginLeft: 'auto',
                         marginRight: 'auto',
+                        padding: '0 1rem',
                     }}
+                    className="mb-6 sm:mb-8"
                 >
                     A book born of Clay's journey through transition, struggle, and soulful awakening.
                     <br />
                     This isn't a manual. It's a guide. A quiet invitation inward.
                 </p>
 
-
                 {/* Book Cover */}
-                <div className=" flex justify-center">
+                <div className="flex justify-center mb-6 sm:mb-8">
                     <div className="relative">
                         <img
-                            src="/book.png"   // Adjust path as needed
+                            src="/book.png"
                             alt="Book Cover"
-                            className="w-68 h-84 md:w-76 md:h-92 object-cover"
+                            className="w-48 h-60 sm:w-68 sm:h-84 md:w-76 md:h-92 object-cover rounded-lg shadow-lg"
                         />
                     </div>
                 </div>
 
-
                 {/* CTA Button */}
-                <div className="relative mb-3 -mt-4 w-[355px] mx-auto">
+                <div className="relative mb-3 -mt-4 w-full max-w-[355px] mx-auto px-4">
                     {/* Top-right SVG */}
-                    <div className="absolute -top-12 -right-16">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="absolute -top-8 sm:-top-12 -right-8 sm:-right-16 hidden sm:block">
+                        <svg className="w-6 h-6 sm:w-[34px] sm:h-[34px]" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.1785 26.5717C17.6014 26.6094 17.2488 27.1082 17.155 28.0122C17.0173 29.2506 17.2066 29.5246 17.8392 29.0209C18.4082 28.5705 18.6892 26.5354 18.1785 26.5717Z" fill="#CC7A00" />
                             <path d="M17.0139 25.2632C16.8407 25.0568 15.9225 25.4619 15.7354 25.8354C15.4164 26.4549 14.471 30.9549 14.3392 31.2009C14.0148 31.7977 15.0874 31.5606 15.5166 30.9434C15.9048 30.3742 17.2004 25.4855 17.0139 25.2632Z" fill="#CC7A00" />
                             <path d="M7.92518 19.0769C8.52725 18.5852 8.51281 18.2456 7.87989 18.2491C6.64452 18.244 5.90769 18.5105 5.623 19.0741C5.2789 19.7281 7.11004 19.7338 7.92518 19.0769Z" fill="#CC7A00" />
@@ -140,9 +124,9 @@ const MandalaWithinBook = () => {
                     </div>
 
                     {/* Button */}
-                    <a href="https://calendly.com/clayboykin" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendly.com/clayboykin" target="_blank" rel="noopener noreferrer" className="block w-full">
                         <button
-                            className="bg-[#CC7A00] hover:bg-[#664000] cursor-pointer text-white rounded-lg text-lg font-medium transition-all duration-300 transform shadow-lg hover:shadow-xl w-full h-[56px]"
+                            className="bg-[#CC7A00] hover:bg-[#664000] cursor-pointer text-white rounded-lg text-base sm:text-lg font-medium transition-all duration-300 transform shadow-lg hover:shadow-xl w-full h-12 sm:h-[56px]"
                         >
                             Book Now →
                         </button>
@@ -150,12 +134,11 @@ const MandalaWithinBook = () => {
 
                     {/* Subtext */}
                     <p
-                        className="mt-3 text-sm"
+                        className="mt-3 text-xs sm:text-sm"
                         style={{
                             fontFamily: 'Lato, sans-serif',
                             fontWeight: 500,
                             fontStyle: 'normal',
-                            fontSize: '16px',
                             lineHeight: '24px',
                             letterSpacing: '0%',
                             textAlign: 'center',
@@ -166,8 +149,8 @@ const MandalaWithinBook = () => {
                     </p>
 
                     {/* Bottom-left SVG */}
-                    <div className="absolute -bottom-1 -left-20">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="absolute -bottom-1 -left-12 sm:-left-20 hidden sm:block">
+                        <svg className="w-6 h-6 sm:w-[34px] sm:h-[34px]" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.1785 26.5717C17.6014 26.6094 17.2488 27.1082 17.155 28.0122C17.0173 29.2506 17.2066 29.5246 17.8392 29.0209C18.4082 28.5705 18.6892 26.5354 18.1785 26.5717Z" fill="#CC7A00" />
                             <path d="M17.0139 25.2632C16.8407 25.0568 15.9225 25.4619 15.7354 25.8354C15.4164 26.4549 14.471 30.9549 14.3392 31.2009C14.0148 31.7977 15.0874 31.5606 15.5166 30.9434C15.9048 30.3742 17.2004 25.4855 17.0139 25.2632Z" fill="#CC7A00" />
                             <path d="M7.92518 19.0769C8.52725 18.5852 8.51281 18.2456 7.87989 18.2491C6.64452 18.244 5.90769 18.5105 5.623 19.0741C5.2789 19.7281 7.11004 19.7338 7.92518 19.0769Z" fill="#CC7A00" />

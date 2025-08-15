@@ -4,13 +4,13 @@ import { X } from "lucide-react";
 const RightSidebar = ({ isOpen, onClose }) => {
   return (
    <div
-  className={`fixed top-0 right-0 min-h-screen w-full max-w-s bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col gap-4
+  className={`fixed top-0 sm:min-h-screen max-h-screen sm:max-w-screen bg-[#FFF6E9] shadow-lg transform transition-transform duration-300 z-50 flex flex-col justify-between
     ${isOpen ? "translate-x-0" : "translate-x-full"}`}
 >
       {/* Top Section */}
       <div>
         {/* Close button */}
-        <div className="absolute top-12 right-5 cursor-pointer" onClick={onClose}>
+        <div className="absolute top-6 right-6 cursor-pointer" onClick={onClose}>
           <X className="h-6 w-6 text-black" />
         </div>
 
@@ -20,7 +20,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Navigation */}
-       <nav className="flex flex-col items-end px-6 space-y-6 font-['Playfair_Display'] font-bold text-[38px] sm:text-[49px] leading-[42px] sm:leading-[54px] tracking-[-0.02em] w-full">
+       <nav className="flex w-[329px] flex-col items-end px-6 space-y-6 font-['Playfair_Display'] font-bold text-[32px] sm:text-[45px] leading-[42px] sm:leading-[54px] tracking-[-0.02em]">
 
           <a
             href="#"
@@ -57,9 +57,9 @@ const RightSidebar = ({ isOpen, onClose }) => {
       </div>
 
       {/* Middle Section (Contact Info) */}
-     <div className="pt-4 flex flex-col items-center justify-center mt-30 px-6 sm:px-10">
+     <div className="pt-4 flex flex-col items-center justify-center mt-18 px-6 sm:px-10">
 
-        <div className="flex items-center justify-center space-x-2 mt-6 text-[#664000] w-[220px]">
+        <div className="flex items-center justify-center space-x-2 text-[#664000] w-[220px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 flex-shrink-0"
@@ -100,7 +100,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
       {/* Bottom Section */}
       <div>
         {/* Social Icons */}
-        <div className="flex justify-center space-x-4 mb-4">
+        <div className="flex justify-center space-x-4 mt-4 mb-4">
           {/* Facebook */}
           <a
             href="https://facebook.com"
@@ -158,7 +158,7 @@ const RightSidebar = ({ isOpen, onClose }) => {
         </div>
 
         {/* Footer */}
-        <p className="font-[Lato] font-semibold text-[14px] sm:text-[19px] leading-[100%] tracking-[0] text-center text-[#664000] px-4 break-words whitespace-normal">
+        <p className="font-[Lato] font-semibold text-[14px] sm:text-[19px] mb-6 leading-[100%] tracking-[0] text-center text-[#664000] px-4 break-words whitespace-normal">
           © 2025 Clay Boykin. All Rights Reserved.
         </p>
       </div>
